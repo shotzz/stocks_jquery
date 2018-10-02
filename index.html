@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Updates</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div id="wrapper">
+    <div id="info">Unable to fetch any more data.</div>
+    <div class="logo"><img src="assets/mnet.svg"></div>
+    <div class="loading">
+        <img src="assets/spinner.gif" width="100" />
+    </div>
+    <div id="results">
+        <div class="row header">
+            <div class="stockName">Ticker</div>
+            <div class="price">Price</div>
+            <div id="header-time">Last Updated</div>
+            <div class="high">High</div>
+            <div class="low">Low</div>
+            <div class="trend">Trends</div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; Media.net
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.js"></script>
+<script type="text/javascript" src="assets/websockets.js"></script>
+</body>
+</html>
