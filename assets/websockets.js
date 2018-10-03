@@ -105,6 +105,9 @@ function updateStockObj(stockData, stock) {
         }
 
         priceArray.push(price.toFixed(2));
+        if(priceArray.length > 25) {
+            priceArray.splice(0,1);
+        }
     }
 
     stockObj[name] = {
